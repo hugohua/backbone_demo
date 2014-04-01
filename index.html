@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Backbone.js Todos</title>
+    <style>
+        *{margin: 0; padding: 0}
+        article{background: #f2f2f2; padding: 10px; margin: 20px;}
+    </style>
+</head>
+
+<body>
+    <div id="J_app">
+        <article>
+            <h1>文章标题</h1>
+            <p>文章内容</p>
+            <time>2013-1-1</time>
+        </article>
+    </div>
+
+    <form action="##">
+        <input id="J_tit" type="text"/>
+        <input id="J_cnt" type="text"/>
+        <button id="J_post" type="button">发送</button>
+    </form>
+
+
+  <script type="text/template" id="J_article">
+      <article>
+          <h1><%= title %></h1>
+          <p><%- content %></p>
+          <time><%- time %></time>
+          <a class="destroy" href="##">删除</a>
+      </article>
+  </script>
+
+    <script src="jquery-2.1.0.js"></script>
+    <script src="underscore.js"></script>
+    <script src="backbone.js"></script>
+    <script src="index.js"></script>
+
+  </body>
+</html>
